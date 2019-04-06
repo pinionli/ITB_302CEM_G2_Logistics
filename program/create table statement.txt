@@ -1,0 +1,21 @@
+CREATE TABLE manufacturer_order (
+exp_key				int(10)		not null,
+item_no				varchar(250)	not null,
+expected_shipment_date		date		not null,
+qty				int(10)		not null,
+price_per_item			int(10)		not null,
+manufacturer_id			varchar(250)	not null,
+retailer_id			varchar(250)	not null,
+status				varchar(250)	not null
+)
+
+CREATE TABLE retailer_order (
+exp_key				int(10)		not null,
+item_no				varchar(250)	not null,
+ship_to_address			varchar(250)	not null,
+qty				int(10)		not null,
+expected_shipment_date		date		not null,
+logistic_id			varchar(250)	not null,
+retailer_id			varchar(250)	not null,
+status				varchar(250)	not null
+)

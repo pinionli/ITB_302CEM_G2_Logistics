@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Logistic System</title>
+
+<style>
+body {
+	background-color:#C8C8C8;
+}
+table {
+	margin:1em auto;
+}
+
+th, td {
+  border: 1.5px solid white;
+  border-collapse: collapse;
+  text-align:center;
+  padding: 15px;
+  color:black;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: rgba(50,180,255,0.4);
+  padding: 10px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Logistic System</a> <!--改LINK + PAGE NAME -->
+	  </div>
+    <ul class="nav navbar-nav">
+      <li><a href="insert_page_m.php">Insert Page</a></li><!--改LINK + PAGE NAME -->
+      <li class="active"><a href="#">Check Page</a></li><!--改LINK + PAGE NAME -->
+      <li><a href="change_status_page_m.php">Change status page</a></li><!--改LINK + PAGE NAME -->
+      <li><a href="index.html">Index Page</a></li><!--改LINK + PAGE NAME -->
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+<h1>Logistic System</h1>
+<hr>
+
+<form class="form-inline" action="result_page_m.php" method="post">
+  <div class="form-group">
+    <label for="text">Enter your tracking number:</label>
+    <input type="text" class="form-control" id="text" name="id">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+
+</body>
+</html>
